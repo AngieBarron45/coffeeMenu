@@ -1,0 +1,80 @@
+body{
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg); /*FONDO DE IMÁGEN / con URL y entre paréntesis el url de la imágen a colocar.*/
+    font-family: sans-serif;
+    padding: 20px;
+}
+.menu { /*Para que el DIV no ocupe todo el ANCHO de la página, colocamos la propiedad WIDTH y le damos 300px. */
+        /* CLASS / Colocamos una clase con un punto (.) y el nombre de la clase. */
+    background-color: burlywood;
+    width: 80%;
+    margin-left: auto; /* Con estas propiedades MRGIN-LEFT y MARGIN.RIGHT con valor AUTO, centramos el DIV. Piense en el MARGEN como un espacio invisible al rededor del elemento, en este caso, div*/
+    margin-right: auto;
+    padding: 20px; /* PADDING / Para dar un espacio entre el contenido y las esquinas del DIV. Como lo aplicamos a los 4 lados, solo colocamos "padding". */
+    max-width: 500px; /* ANCHURA MÁXIMA / la colocamos para que cuando la pantalla sea demasiado amplia, esta sea más pequeña y con max-width: 500px, puedan quedar los precios más cerca de los productos. */
+}
+h1, h2, p{
+    text-align: center; /* Centramos estos 3 elementos en un solo arreglo colocando las comas entre cada elemento y en el cuerpo colocamos; TEXT-ALIGN y el valor CENTER. */
+}
+.flavor, .dessert{ /*Colocamos ambas clases, tanto la de las propiedades que hay en Coffee y Desserts (.flavor, .dessert)*/
+    text-align: left;
+    width: 75%; /*WIDTH / Si reduce el ancho de la vista previa de la página, notará que, en algún momento, parte del texto de la izquierda comienza a pasar a la siguiente línea. Esto se debe a que el ancho de los elementos p en el lado izquierdo solo puede ocupar el 50 % del espacio.
+    Como sabe que los precios de la derecha tienen una cantidad significativamente menor de caracteres, cambie el valor del ancho de la clase de tipo al 75 % y el valor del ancho de la clase de precio al 25 %.*/
+}
+.price{
+    text-align: right;
+    width: 25%; 
+}
+.item p{ /*APLICAR el siguiente estilo a todos los elementos "p" que se encuentren dentro de la clase (".item"), que es la que tiene el artículo.*/
+    display: inline-block; /* INLINE-BLOCK / Le pedimos que nos haga esos elementos INLINE para que se puedan pasar a la MISMA LÍNEA tanto el Flavor y Price. */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+h1, h2{
+    font-family: Impact, serif; /* FALLBACK / VALOR ALTERNATIVO ó RESPALDO, Puede agregar un valor alternativo para la familia de fuentes agregando otro nombre de fuente separado por una coma. Los respaldos se utilizan en casos en los que la inicial no se encuentra o no está disponible. */ 
+}
+.established{
+    font-style: italic;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0; /* Colocamos 0 en este MARGEN SUPERIOR debido a que el navegador tiene un margen determinado para MARGIN-TOP del H1, entonces le colocamos 0 para que lo elimine y queden de la misma medida todos los lados. */
+    margin-bottom: 15px; /* Colocamos un MERGEN INFERIOR a H1 para acercar el título al texto de abajo (est. 2020) */
+}
+h2{
+    font-size: 30px;
+}
+hr{
+    height: 2px; /* Cambiamos la propiedad de lo largo de la linea divisora. */
+    background-color: brown;
+    border-color: brown;
+}
+.bottom-line{
+    margin-top: 25px;
+}
+/* FOOTER. */
+footer{
+    font-size: 14px;
+}
+a{
+    color: black;
+}
+a:visited{ /*:VISITED / Para que pase lo que en el cuerpo diga del link cuando ha sido VISITADO. En este caso, cambia el color. */
+    color: black;
+}
+a:hover{ /* HOVER / Cuando el Mouse se POSICIONE arriba del link, ocurre lo que en el cuerpo del elemento diga, en este calo, el color cambia a café cuando el ratón se posiciona arriba de este link. */
+    color: brown;
+}
+a:active{ /* ACTIVE / Cuando se le está dando "click" al enlace, se vuelve blanco. */
+    color: brown;
+}
+.address{
+    margin-bottom: 5px; /* Para acortar un poco el margen inferior del menú, donde está address. */
+}
+img{
+    display: block; /* Las imágenes son como elementos inline, para ello colocamos el display "BLOCK", para hacerlo un elemento de BLOQUE. */
+    margin-left: auto; /* MARGEN IZQUIERDO y MARGEN DERECHO lo colocamos en AUTO para centrar la imágen del café. */
+    margin-right: auto;
+    margin-top: -25px; /* NEGATIVE / Como los headings2 H2, tienen un margen por defecto, podemos cambiar el margen de h2 como lo hicimos con el h1 colocando un 0 en el margen que queremos reducir. */
+                       /* Pero en esta ocasión colocamos un margen NEGATIVO de 25px (-25px) en el margin-top MARGEN SUPERIOR para LEVANTARLO a su posicion actual. */
+}
